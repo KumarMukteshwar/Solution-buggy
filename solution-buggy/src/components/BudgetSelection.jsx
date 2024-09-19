@@ -7,27 +7,25 @@ import Logo from "../assets/logo.png"; // Import the background image
 const BudgetSelection = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen bg-cover bg-no-repeat mt-10"
-      style={{
-        backgroundImage: `url(${Logo})`,
-        marginTop: "40px", // Prevent the logo from repeating
-        backgroundSize: "100px 100px", // Set the size of the Logo
-        backgroundPosition: "top", // Position the logo at the top
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div
-        className="text-center p-6 rounded-md bg-white bg-opacity-10"
-        style={{
-          backgroundImage: `url(${background2})`,
-          backgroundSize: "cover", 
-          backgroundPosition: "center",
-          height: "100%", 
-          minHeight: "500px", 
-          maxWidth:"300px",
-          marginBottom: "9%",
-        }}
-      >
+  className="flex flex-col items-center justify-center min-h-screen bg-cover bg-no-repeat"
+  style={{
+    backgroundImage: `url(${Logo})`,
+    marginTop: "40px", // Prevent the logo from repeating
+    backgroundSize: "200px 150px",
+    backgroundPosition: "top",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+<div
+    className="bg-white rounded-lg shadow-md w-full max-w-md p-4 md:p-6 space-y-4 mx-auto"
+    style={{
+      backgroundImage: `url(${background2})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      minHeight: "500px",
+      marginTop: "150px",
+    }}
+  >
         <h1 className="text-3xl font-bold mb-6">Select your Budget</h1>
 
         <div className="bg-blue-900 text-white p-6 mt-4 rounded-md">
